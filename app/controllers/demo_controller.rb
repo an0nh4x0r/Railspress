@@ -10,4 +10,8 @@ class DemoController < ApplicationController
     render :template => 'demo/index'
   end
 
+  def other_hello
+    redirect_to :controller => 'demo', :action => 'hello'
+  end
+
 end
