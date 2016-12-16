@@ -11,4 +11,9 @@
 <% end %>
 
 <a href="/demo/index">Welcome from the index page 1</a> <br>
-<%= link_to 'Welcome from the index page 2', {:controller => 'demo', :action => 'index'} %>
+<%= link_to 'Welcome from the index page 2', {:controller => 'demo', :action => 'index'} %> <br>
+
+ID: <%= @id %> <br>
+ID: <%= params[:id] %> <br>
+page: <%= params[:page] %> <br>
+next page:  <%= params[:page].to_i + 1 %> <br>
